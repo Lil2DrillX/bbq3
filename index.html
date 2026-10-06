@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegis Global — CSS Анимации</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Flexbox: Шапка сайта -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon"></span>
+            Aegis Global
+        </div>
+        <nav class="nav">
+            <a href="#hero">Главная</a>
+            <a href="#features">Преимущества</a>
+            <a href="#animations">Анимации</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <a href="#" class="btn-auth">Войти/Регистрация</a>
+    </header>
+
+    <main>
+        <!-- Flexbox + Анимация плавания: Первый экран -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="status-badge">
+                    <span class="pulse-dot"></span>
+                    <span class="badge">ЗАДАНИЕ 5</span>
+                </div>
+                <h1>Оживляем интерфейс с помощью CSS-анимаций</h1>
+                <p class="hero-desc">Плавные переходы, трансформации и ключевые кадры @keyframes без использования JavaScript.</p>
+                <a href="#animations" class="btn-cta">Тестировать эффекты</a>
+            </div>
+            
+            <div class="hero-media">
+                <img src="aegis.jpg" alt="Aegis Global — Эмблема" class="floating-img">
+            </div>
+        </section>
+
+        <!-- CSS Grid + Transform (scale/translate): Блок преимуществ -->
+        <section id="features" class="features-section">
+            <span class="section-tag">ПОЧЕМУ МЫ</span>
+            <h2>Преимущества (Ховер-трансформации)</h2>
+            
+            <div class="cards-grid">
+                <article class="card animated-card">
+                    <span class="card-num">01</span>
+                    <h3>Простота</h3>
+                    <p>Понятный интерфейс с плавными откликами элементов.</p>
+                </article>
+
+                <article class="card animated-card">
+                    <span class="card-num">02</span>
+                    <h3>Надёжность</h3>
+                    <p>Стабильная работа сайта и оптимизированная анимация.</p>
+                </article>
+
+                <article class="card animated-card">
+                    <span class="card-num">03</span>
+                    <h3>Поддержка</h3>
+                    <p>Быстрые ответы на любые ваши вопросы 24/7.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Специальная секция Практической работы №5: Демонстрация анимаций -->
+        <section id="animations" class="animations-section">
+            <span class="section-tag">ЛАБОРАТОРНАЯ №5</span>
+            <h2>Демонстрация CSS-анимаций</h2>
+            
+            <div class="anim-demo-container">
+                <!-- 1. Вращающийся элемент -->
+                <div class="demo-box">
+                    <h4>1. Бесконечное вращение (@keyframes rotate)</h4>
+                    <div class="rotating-circle">
+                        <span>AEGIS</span>
+                    </div>
+                </div>
+
+                <!-- 2. Пульсирующий/Мигающий текст -->
+                <div class="demo-box">
+                    <h4>2. Мигающий текст (@keyframes blink)</h4>
+                    <p class="blinking-text">⚡ Данные обновляются в реальном времени</p>
+                </div>
+
+                <!-- 3. Трансформация при наведении -->
+                <div class="demo-box">
+                    <h4>3. Масштабирование (transform: scale)</h4>
+                    <div class="scalable-box">
+                        Наведи на меня!
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Flexbox: Подвал сайта -->
+    <footer id="contacts" class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <strong class="footer-logo">Aegis Global</strong>
+                <p>Задание 5: CSS-анимации и переходы.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p><a href="mailto:Spit.faer.03@gmail.com">Spit.faer.03@gmail.com</a></p>
+                <p><a href="tel:+77762059320">+7 (776) 205 9320</a></p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Мы в соцсетях</h4>
+                <div class="social-links">
+                    <a href="#" class="social-tag">VK</a>
+                    <a href="#" class="social-tag">TG</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Задание 5. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
